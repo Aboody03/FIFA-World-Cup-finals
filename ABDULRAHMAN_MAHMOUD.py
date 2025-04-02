@@ -34,6 +34,7 @@ fig = px.choropleth(
 
 external_stylesheets = [dbc.themes.FLATLY]
 app = Dash(__name__, external_stylesheets=external_stylesheets)
+server = app.server
 app.title = "FIFA World Cup Dashboard"
 
 app.layout = dbc.Container([
